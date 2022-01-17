@@ -3,15 +3,70 @@ package chapter6;
 Calculate an itemized cell phone bill
  */
 
-public class PhoneBill {
+import java.io.Serializable;
+
+public class PhoneBill implements Serializable {
     //fields
-    private int id;
-    private double basePlan;
-    private int minutesUsed;
-    private int minutesAllowed;
-    private double taxes;
-    private double totalDue;
-    private double overageCost;
+     int id;
+     double basePlan;
+     int minutesUsed;
+     int minutesAllowed;
+     double taxes;
+     double totalDue;
+     double overageCost;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getBasePlan() {
+        return basePlan;
+    }
+
+    public void setBasePlan(double basePlan) {
+        this.basePlan = basePlan;
+    }
+
+    public int getMinutesUsed() {
+        return minutesUsed;
+    }
+
+    public void setMinutesUsed(int minutesUsed) {
+        this.minutesUsed = minutesUsed;
+    }
+
+    public int getMinutesAllowed() {
+        return minutesAllowed;
+    }
+
+    public void setMinutesAllowed(int minutesAllowed) {
+        this.minutesAllowed = minutesAllowed;
+    }
+
+    public void setTaxes(double taxes) {
+        this.taxes = taxes;
+    }
+
+    public double getTotalDue() {
+        return totalDue;
+    }
+
+    public void setTotalDue(double totalDue) {
+        this.totalDue = totalDue;
+    }
+
+    public double getOverageCost() {
+        return overageCost;
+    }
+
+    public void setOverageCost(double overageCost) {
+        this.overageCost = overageCost;
+    }
+
 
     /*
     constructors for nothing entered, id only entered, and all info entered
